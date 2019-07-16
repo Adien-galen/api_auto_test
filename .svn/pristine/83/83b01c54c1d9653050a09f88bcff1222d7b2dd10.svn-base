@@ -1,0 +1,18 @@
+{
+  "test_allure_demo.py::test_case_01": true,
+  "test_allure_demo.py::test_case_02": true,
+  "test_allure_demo.py::test_case_03": true,
+  "test_allure_demo.py::test_case_04": true,
+  "test_auth_login.py::TestAuthLogin::test_pre\u83b7\u53d6\u624b\u673a\u53f7\u7801\u9a8c\u8bc1\u7801": true,
+  "test_auth_login.py::TestAuthLogin::test_\u6839\u636e\u57ce\u5e02ID\u83b7\u53d6\u5c0f\u533a\u5217\u8868": true,
+  "test_auth_login.py::TestAuthLogin::test_\u83b7\u53d6\u57ce\u5e02\u5217\u8868": true,
+  "test_auth_login.py::TestAuthLogin::test_\u83b7\u53d6\u624b\u673a\u53f7\u7801\u9a8c\u8bc1\u7801": true,
+  "test_house_controller.py::TestHoustController::test_house_list": true,
+  "test_postman_api.py::test_timestamp[1996-1990-flase]": true,
+  "test_postman_api.py::test_timestamp[1996-1992-flase]": true,
+  "test_postman_api.py::test_timestamp[1996-1993-true]": true,
+  "test_postman_api.py::test_timestamp[2016-10-10-2015-12-13-Flase]": true,
+  "test_postman_api.py::test_timestamp[2016-10-10-2018-12-13-true]": true,
+  "test_postman_api.py::test_timestamp[2016-10-10-2018-13-13-Flase]": true,
+  "test_shopping_trolley.py::TestShoppingTrolley::test_add_shopping_trolley": true
+}

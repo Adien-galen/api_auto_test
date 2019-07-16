@@ -1,0 +1,14 @@
+[
+  "test_case/test_allure_demo.py::test_case_01",
+  "test_case/test_allure_demo.py::test_case_02",
+  "test_case/test_allure_demo.py::test_case_03",
+  "test_case/test_allure_demo.py::test_case_04",
+  "test_case/test_allure_demo2.py::test_case_01",
+  "test_case/test_allure_demo2.py::test_case_02",
+  "test_case/test_allure_demo2.py::test_case_03",
+  "test_case/test_allure_demo2.py::test_case_04",
+  "test_case/test_auth_login.py::TestAuthLogin::test_\u83b7\u53d6\u624b\u673a\u53f7\u7801\u9a8c\u8bc1\u7801",
+  "test_case/test_auth_login.py::TestAuthLogin::test_\u83b7\u53d6\u57ce\u5e02\u5217\u8868",
+  "test_case/test_auth_login.py::TestAuthLogin::test_\u6839\u636e\u57ce\u5e02ID\u83b7\u53d6\u5c0f\u533a\u5217\u8868",
+  "test_case/test_house_controller.py::TestHoustController::test_house_list"
+]

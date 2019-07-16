@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: allure-python-commons
+Version: 2.6.2
+Summary: Common module for integrate allure with python-based frameworks
+Home-page: https://github.com/allure-framework/allure-python
+Author: QAMetaSoftware, Stanislav Seliverstov
+Author-email: sseliverstov@qameta.io
+License: Apache-2.0
+Keywords: allure reporting report-engine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: attrs (>=16.0.0)
+Requires-Dist: pluggy (>=0.4.0)
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: enum34; python_version < "3.4"
+
+UNKNOWN
+
+

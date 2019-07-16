@@ -1,0 +1,39 @@
+# encoding: utf-8
+import allure
+import pytest
+import requests
+'''
+@author: lingshu
+@file: test_postman_api.py
+@time: 2019/7/8 20:54
+@desc: 测试postman API
+'''
+
+@allure.feature('postman')
+@allure.story('postman-api')
+@pytest.mark.parametrize('timestamp,target,expected',[
+    ('2016-10-10','2018-12-13',True),
+    ('2016-10','2018-12',True),
+    ('2016-10-10','2018-13-13',False),
+    ('2016-10-10','2015-12-13',False),
+    ('2016-10-10','2019-12-33',False),
+    ('2019-12-33','2019-6-30',False),
+    ('','2019-6-30',False),
+    ('6-30','7-30',False),
+    ('2017','2018',False),
+    ('','',False),
+    ('abc','2019-6-30',False)
+    ('20190501','2019-6-30',False)
+])
+def test_timestamp(timestamp,target,expected,env_config):
+    """
+    用例描述：测试不同的timestamp和target
+    """
+    #从yml配置文件获取url
+    url = env_config['host']['url']
+    payload = {'timestamp':timestamp,'target':target}
+    r = requests.get(url,params=payload)
+    print(r.url)
+    result = r.json()
+    assert result['before']==expected
+

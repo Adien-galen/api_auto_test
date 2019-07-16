@@ -1,0 +1,37 @@
+## 技术栈：
+- python 、pytest、Requests
+- Allure
+- Jenkins
+
+## 项目目录介绍
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190709112746811.png)
+### config
+这个包下放的配置文件，如环境、url地址等
+### test_case
+这个包放的是测试用例文件，本次接口测试用例为：test_postman_api.py
+另：conftest.py是pytest的一个pytest的配置文件，单独管理一些预置的操作场景
+### testdata
+把测试数据放到excel里，实现脚本和数据分离。但是本次的测试数据为时间和Boolean格式，读出来还有问题，由于调试时间有限，这次直接把测试数据写到了测试用例里面
+### utils
+工具类包，如读取excel文件
+### test_all_run.py
+全局运行文件，实现运行所有测试用例
+
+## Jenkins配置
+- Jenkins添加Allure插件
+- 新建一个项目，从svn拉取测试代码
+- 构建命令
+
+```
+python test_all_run.py
+pytest -s -q --alluredir allure-results
+```
+
+- 如下图：
+-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019070911370980.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dhbGVuMjAxNg==,size_16,color_FFFFFF,t_70)
+
+### Allure测试报告
+1、
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190709113809847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dhbGVuMjAxNg==,size_16,color_FFFFFF,t_70)
+2、
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190709113839573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dhbGVuMjAxNg==,size_16,color_FFFFFF,t_70)

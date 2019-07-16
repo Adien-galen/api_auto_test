@@ -1,0 +1,44 @@
+# 技术栈
+  - Java
+  - maven
+  - selenium
+  - testng
+  - allure
+
+# 环境
+- JDK1.8
+- aven3.3.9M
+- IDEA
+
+# 运行
+- 解压项目，用IDEA打开
+- 运行testng.xml文件
+- 查看Allure测试报告
+
+# 项目结构介绍
+### 主目录：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190613181953252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dhbGVuMjAxNg==,size_16,color_FFFFFF,t_70)
+
+### resource文件夹
+存放一些资源文件，如测试用例.excel文件
+### cases包
+测试用例文件
+### common包
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190613190126454.png)
+
+- BaseTest.java  测试用例的基类，其他测试用例都继承这个类
+- InitDriver.java  初始webdriver，可以提供获取chrome、firefox、ie三个浏览器的方法
+- OperateElement.java  对webdriver的API做了二次封装
+- TestngListener  全局监控器，控制失败用例重跑、截图、打印测试步骤
+
+### pageobject包
+对每个测试页面的元素和公共操作封装成一个类
+
+### utils包
+封装一些实用的工具类，如：读取excel、配置文件等
+
+### env.properties
+测试要用到的url、账号密码等可以写在这个文件里面
+
+### pom.xml
+1、管理jar包   2、配置maven-surefire-plugin插件来运行test包下面的代码
