@@ -1,5 +1,4 @@
 # api_auto_test
-Pytest+Request+Allure+Jenkins 接口自动化测试Demo
 概要：对postman的一个接口做了接口自动化测试，使用Pytest+Request+Allure+Jenkins 框架
 ## 技术栈：
 - python3 、pytest、Requests
