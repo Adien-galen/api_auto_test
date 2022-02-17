@@ -24,6 +24,7 @@ https://postman-echo.com/time/before?timestamp=2016-10-10&target=2018-12-13
 2、 项目目录如下图：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190716191351845.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dhbGVuMjAxNg==,size_16,color_FFFFFF,t_70)
+
 3、config
 这个包下放的配置文件，如环境、url地址等
 
